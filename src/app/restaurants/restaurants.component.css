@@ -1,0 +1,10 @@
+.restaurants {
+  border: 2px solid deeppink;
+  text-align: center;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.restaurant {
+  border-bottom: 1px dotted deeppink;
+}

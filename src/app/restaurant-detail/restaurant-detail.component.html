@@ -1,0 +1,7 @@
+<div *ngIf="restaurant">
+  <h2>{{restaurant.name}}<span [innerHtml]="restaurant.atmosphere"></span></h2>
+  <div class="details" *ngIf="restaurant.isSelected">
+    <p>{{restaurant.attributes}}</p>
+    <p>{{restaurant.notes}}</p>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.restaurants {
+  border: 2px solid deeppink;
+}
+
+.restaurant {
+  border-bottom: 1px dotted deeppink;
+}

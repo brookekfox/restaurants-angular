@@ -1,0 +1,8 @@
+<div class="restaurants">
+  <div class="restaurant" *ngFor="let restaurant of restaurants"
+       [class.selected]="restaurant === selectedRestaurant"
+       (click)="onSelect(restaurant)">
+    <app-restaurant-detail [restaurant]="restaurant">
+    </app-restaurant-detail>
+  </div>
+</div>
