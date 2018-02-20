@@ -29,6 +29,7 @@ export class NewRestaurantComponent implements OnInit {
     "brunch",
     "lunch",
     "dinner",
+    "dessert",
     "outside seating",
     "parking - easy",
     "parking - hard",
@@ -36,7 +37,8 @@ export class NewRestaurantComponent implements OnInit {
     "coffee - bad",
     "walkable",
     "good for Mike's family",
-    "good for Brooke's family"
+    "good for Brooke's family",
+    "haven't tried yet"
   ];
   ATMOSPHERES = [
     "&#128512;",
