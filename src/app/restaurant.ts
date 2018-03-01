@@ -7,4 +7,5 @@ export class Restaurant {
   notes: string;
   atmosphere: string;
   isSelected: boolean;
+  haventTriedYet: boolean;
 }

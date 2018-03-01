@@ -1,8 +1,29 @@
-<div class="restaurants">
-  <div class="restaurant" *ngFor="let restaurant of restaurants"
-       [class.selected]="restaurant === selectedRestaurant"
-       (click)="onSelect(restaurant)">
-    <app-restaurant-detail [restaurant]="restaurant">
-    </app-restaurant-detail>
+<div class="restaurant-list-container flex horizontal space-around">
+  <div class="restaurant-filters">
+    Filter by:
+    <div class="restaurant-attributes">
+      <h3>Attributes</h3>
+      <p *ngFor="let attr of allAttributes"
+         (click)="sortByAttr(attr)"
+         [class.isAttrSelected]="attributesFilters.indexOf(attr) > -1">
+        {{attr}}
+      </p>
+    </div>
+    <div class="restaurant-price">
+      <h3>Price</h3>
+      <p *ngFor="let price of prices"
+         (click)="sortByPrice(price.value)"
+         [class.isPriceSelected]="appliedPrices.indexOf(price.value) > -1">
+        {{price.label}}
+      </p>
+    </div>
+  </div>
+
+  <div class="restaurants">
+    <div class="restaurant" *ngFor="let restaurant of restaurants"
+         [class.selected]="restaurant === selectedRestaurant">
+      <app-restaurant-detail [restaurant]="restaurant">
+      </app-restaurant-detail>
+    </div>
   </div>
 </div>

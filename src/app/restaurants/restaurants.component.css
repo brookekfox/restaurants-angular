@@ -1,10 +1,22 @@
 .restaurants {
-  border: 2px solid deeppink;
+  border: 2px solid forestgreen;
   text-align: center;
   width: 60%;
   margin: 10px auto;
 }
 
 .restaurant {
-  border-bottom: 1px dotted deeppink;
+  border-bottom: 1px dotted forestgreen;
+}
+
+.restaurant-attributes > p,
+.restaurant-price > p {
+  cursor: pointer;
+}
+
+.restaurant-attributes > p:hover,
+.isAttrSelected,
+.isPriceSelected {
+  color: forestgreen;
+  font-weight: bold;
 }

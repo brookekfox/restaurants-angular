@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BROOKE';
-  // {
-  //   name: 'Blue Bottle Coffee',
-  //   price: 1,
-  //   ranking: 0,
-  //   attributes: ['coffee - good', 'parking - easy', 'breakfast'],
-  //   notes: 'great coffee. really good egg sandwich.',
-  //   atmosphere: '&#9786;'
-  // }
 }

@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  /*font-family: 'Sacramento', cursive;*/
+  /*font-family: 'Playfair Display', serif;*/
+}
+
+h1, h3 {
+  font-family: 'Sacramento', cursive;
+}
+
+/*p, ul, ol {
+  font-family: 'Playfair Display', serif;
+}*/
+
+.flex {
+  display: flex;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
